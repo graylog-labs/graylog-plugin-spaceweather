@@ -30,11 +30,6 @@ public class SWEPAMParser {
         String sSpeed = parts[8];
         String sIonTemp = parts[9];
 
-        if (sProtons.equals("-9999.9") || sSpeed.equals("-9999.9") || sIonTemp.equals("-1.00e+05")) {
-            LOG.debug("One of the SWEPAM readings indicated a no data status. Not parsing this data point.");
-            return null;
-        }
-
         DateTime timestamp = new DateTime(
                 Integer.parseInt(sYear),
                 Integer.parseInt(sMonth),
@@ -64,6 +59,11 @@ public class SWEPAMParser {
                 break;
             default:
                 throw new RuntimeException("Unrecognized SWEPAM message status: " + sStatus);
+        }
+
+        if (sProtons.equals("-9999.9") || sSpeed.equals("-9999.9") || sIonTemp.equals("-1.00e+05")) {
+            LOG.debug("One of the SWEPAM readings indicated a no data status. Marking this data point as BAD_DATA.");
+            status = SWEPAMMessage.Status.BAD_DATA;
         }
 
         return new SWEPAMMessage(

@@ -27,6 +27,8 @@ public class SpaceweatherCodec extends AbstractCodec {
 
     public static String NAME = "spaceweather";
 
+    private SWEPAMMessage lastMessage;
+
     @AssistedInject
     protected SpaceweatherCodec(@Assisted Configuration configuration,
                         MetricRegistry metricRegistry) {
@@ -40,7 +42,7 @@ public class SpaceweatherCodec extends AbstractCodec {
         String[] lines = response.split("\n");
 
         if (lines == null) {
-            LOG.warn("Could nor parse space weather payload.");
+            LOG.warn("Could not parse space weather payload.");
             return null;
         }
 
@@ -54,8 +56,14 @@ public class SpaceweatherCodec extends AbstractCodec {
         SWEPAMMessage message = SWEPAMParser.parse(dataLine);
 
         if(message.getStatus() != SWEPAMMessage.Status.NOMINAL) {
-            LOG.debug("SWEPAM message status is no [NOMINAL] but [{}]. Skipping data point.", message.getStatus().toString());
-            return null;
+            LOG.debug("SWEPAM message status is no [NOMINAL] but [{}]. Using last data point.", message.getStatus().toString());
+            if (lastMessage == null) {
+                LOG.debug("No last SWEPAM message available. Skipping this data point.");
+                return null;
+            }
+            message = lastMessage;
+        } else {
+            lastMessage = message;
         }
 
         Message log = new Message(message.getSummary(), "solardata", DateTime.now(DateTimeZone.UTC));
