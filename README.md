@@ -14,3 +14,6 @@ Yes. You can now correlate your system health with solar activity and geomagneti
 
 ### What.
 
+![](https://github.com/Graylog2/graylog-plugin-spaceweather/blob/master/screen1.png)
+
+![](https://github.com/Graylog2/graylog-plugin-spaceweather/blob/master/screen2.png)
