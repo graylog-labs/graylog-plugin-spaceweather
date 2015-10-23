@@ -1,6 +1,6 @@
 ## Graylog Spaceweather plugin (Solar data)
 
-#### (This is not actually providing value at all - except fun and being a showcase of what is possible with the Graylog plugin system)
+#### (This is not actually providing value at all - except fun and the possibility to decently nerd out )
 
 This [Graylog](https://www.graylog.org/) input plugin reads data from the [Advanced Composition Explorer (ACE)](https://en.wikipedia.org/wiki/Advanced_Composition_Explorer) spacecraft which was launched in 1997 and is positioned at the so called [L1 Lagrangian point](https://en.wikipedia.org/wiki/Lagrangian_point#L1) where the gravity attraction of the Sun counters the gravity attractions of Earth.
 
