@@ -17,3 +17,12 @@ Yes. You can now correlate your system health with solar activity and geomagneti
 ![](https://github.com/Graylog2/graylog-plugin-spaceweather/blob/master/screen1.png)
 
 ![](https://github.com/Graylog2/graylog-plugin-spaceweather/blob/master/screen2.png)
+
+## Installation
+
+[Download the plugin](https://github.com/Graylog2/graylog-plugin-spaceweather//releases)
+and place the `.jar` file in your Graylog plugin directory. The plugin directory
+is the `plugins/` folder relative from your `graylog-server` directory by default
+and can be configured in your `graylog.conf` file.
+
+Restart `graylog-server`, start the input using the web interface and you are done.
