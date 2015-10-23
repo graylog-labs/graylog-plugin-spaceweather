@@ -10,7 +10,7 @@ Together with several other missions, the ACE spacecraft is sitting there and co
 
 Yes. You can now correlate your system health with solar activity and geomagnetic storms. Ever needed a proof that a solar storm made a bit flip and your systems crash? Now you can! Correlate proton density to the response time of your app and the ion temperature to your exception rate. 500% more useful on dashboards!
 
-> The ultimate Friday thing to do.  ¯\_(ツ)_/¯
+> The ultimate Friday thing to do.  ¯\\_(ツ)_/¯
 
 ### What.
 
