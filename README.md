@@ -1,18 +1,16 @@
-# Graylog SpaceweatherInput Plugin
+## Graylog Spaceweather plugin (Solar data)
 
-Welcome to your new Graylog plugin!
+#### (This is not actually providing value at all - except fun and being a showcase of what is possible with the Graylog plugin system)
 
-Please refer to http://docs.graylog.org/en/latest/pages/plugins.html for documentation on how to write
-plugins for Graylog.
+This input reads data from the [Advanced Composition Explorer (ACE)](https://en.wikipedia.org/wiki/Advanced_Composition_Explorer) spacecraft which was launched in 1997 and is positioned at the so called [L1 Lagrangian point](https://en.wikipedia.org/wiki/Lagrangian_point#L1) where the gravity attraction of the Sun counters the gravity attractions of Earth.
 
+Together with several other missions, the ACE spacecraft is sitting there and constantly recording metrics about the stuff that the Sun is throwing out in the direction of the Earth using the Solar Wind Electron, Proton and Alpha Monitor (SWEPAM). **This plugin is reading data from SWEPAM*.
 
-Getting started
----------------
+### What.
 
-This project is using Maven 3 and requires Java 7 or higher. The plugin will require Graylog 1.0.0 or higher.
+Yes. You can now correlate your system health with solar activity and geomagnetic storms. Ever needed a proof that a solar storm made a bit flip and your systems crash? Now you can! Correlate proton density to the response time of your app and the ion temperature to your exception rate.
 
-* Clone this repository.
-* Run `mvn package` to build a JAR file.
-* Optional: Run `mvn jdeb:jdeb` and `mvn rpm:rpm` to create a DEB and RPM package respectively.
-* Copy generated JAR file in target directory to your Graylog plugin directory.
-* Restart the Graylog.
+> The ultimate Friday thing to do. \_(ツ)_/¯
+
+### What.
+
