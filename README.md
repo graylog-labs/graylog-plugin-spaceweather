@@ -2,6 +2,8 @@
 
 #### (This is not actually providing value at all - except fun and the possibility to decently nerd out )
 
+**You can also find this plugin on the [Graylog Marketplace](https://marketplace.graylog.org/addons/8adb2876-bdd6-4163-8a39-f218086f6cde).**
+
 This [Graylog](https://www.graylog.org/) input plugin reads data from the [Advanced Composition Explorer (ACE)](https://en.wikipedia.org/wiki/Advanced_Composition_Explorer) spacecraft which was launched in 1997 and is positioned at the so called [L1 Lagrangian point](https://en.wikipedia.org/wiki/Lagrangian_point#L1) where the gravity attraction of the Sun counters the gravity attractions of Earth.
 
 Together with several other missions, the ACE spacecraft is sitting there and constantly recording metrics about the stuff that the Sun is throwing out in the direction of the Earth using the Solar Wind Electron, Proton and Alpha Monitor (SWEPAM). **This plugin is reading data from SWEPAM**.
