@@ -1,6 +1,6 @@
 ## Graylog Spaceweather plugin (Solar data)
 
-#### (This is not actually providing value at all - except fun and the possibility to decently nerd out )
+#### (This is not actually providing any value at all - except fun and the possibility to decently nerd out )
 
 **You can also find this plugin on the [Graylog Marketplace](https://marketplace.graylog.org/addons/8adb2876-bdd6-4163-8a39-f218086f6cde).**
 
